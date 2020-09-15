@@ -1,0 +1,1 @@
+{"version":3,"file":"appPrincipal.js","sourceRoot":"","sources":["../../src/routes/appPrincipal.ts"],"names":[],"mappings":";;AAAA,qCAAiC;AAEjC,gEAA6D;AAC7D,MAAM,MAAM,GAAW,gBAAM,EAAE,CAAC;AAEhC,OAAO;AACP,MAAM,CAAC,IAAI,CAAC,QAAQ,EAAE,IAAI,iBAAO,EAAE,CAAC,YAAY,CAAC,CAAC;AAClD,MAAM,CAAC,IAAI,CAAC,SAAS,EAAE,IAAI,iBAAO,EAAE,CAAC,MAAM,CAAC,CAAC;AAE7C,kBAAe,MAAM,CAAC"}
