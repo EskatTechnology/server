@@ -6,6 +6,20 @@ import { CrearToken, DeleteToken } from '../../lib/verifyToken'
 
 export class Empresa {
 
+    guardarPersona= async (req: Request, res: Response) => {
+        await new mssql.ConnectionPool(config).connect().then(pool =>{
+            return pool.request()
+            .input('Nombre',mssql.VarChar, req.body.name)
+            .input('Apellidos',mssql.VarChar, req.body.lastname)
+            .input('Usuario',mssql.VarChar,req.body.user)
+            .input('Contraseña',mssql.VarChar,req.body.password)
+            .input('Telefono',mssql.VarChar,req.body.phone)
+            .input('Identificacion',mssql.VarChar,req.body.identification)
+            .input('IdEmpresa',mssql.Int,req.body.idCompany)
+            .execute('CrearPersona')
+        })        
+    }
+
     loginEmpresa = async (req: Request, res: Response) => {   
         await new mssql.ConnectionPool(config).connect().then(pool => {
             return pool.request()
