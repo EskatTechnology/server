@@ -4,6 +4,7 @@ import { config } from '../../lib/database';
 import { CrearToken, DeleteToken } from '../../lib/verifyToken'
 import { environment } from '../../environments/envitoments';
 import cloudinary from 'cloudinary';
+import fs from 'fs/promises'
 
 cloudinary.v2.config({
     cloud_name: environment.cloud_name,
@@ -47,6 +48,7 @@ export class Persona {
             .execute('CrearPersona')
         })
         
+        await fs.unlink(req.file.path);
     }
    
     
