@@ -15,7 +15,7 @@ export const config1 = {
     user: 'eskatusa_admin',
     password: 'Eskat_1234',
     server: '190.8.176.202', 
-    database: '',
+    database: 'eskatusa_EmpresaPrueba',
     options:{
         encrypt: false,
         enableArithAbort: false         
